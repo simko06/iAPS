@@ -40,6 +40,7 @@ jobs:
       - name: Fastlane Provision
         run: bundle _${{ env.BUNDLER_VER }}_ exec fastlane identifiers
         env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: TRUE 
           TEAMID: ${{ secrets.TEAMID }}
           GH_PAT: ${{ secrets.GH_PAT }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
