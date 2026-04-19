@@ -2,7 +2,8 @@ name: 2. Add Identifiers
 run-name: Add Identifiers (${{ github.ref_name }})
 on:
   workflow_dispatch:
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   validate:
     name: Validate
