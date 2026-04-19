@@ -41,7 +41,6 @@ jobs:
       - name: Fastlane Provision
         run: bundle _${{ env.BUNDLER_VER }}_ exec fastlane identifiers
         env:
-          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: TRUE
           TEAMID: ${{ secrets.TEAMID }}
           GH_PAT: ${{ secrets.GH_PAT }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
