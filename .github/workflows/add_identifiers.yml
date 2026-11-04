@@ -12,7 +12,7 @@ jobs:
 
   identifiers:
     needs: validate
-    runs-on: macos-latest
+    runs-on: xcode-27
     steps:
       
       # Checks-out the repo
